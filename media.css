@@ -89,19 +89,19 @@
     height: 40px;
     border-radius: 8px;
   }
-  #reset {
+  .resetBtn {
     position: absolute;
     top: 0%;
     background-color: rgb(225, 33, 88);
     color: white;
     padding: 0.3rem 2rem;
   }
-  #dicebtn {
-    position: absolute;
-    top: 54%;
-  }
-  #hold {
+  .diceBtn {
     position: absolute;
     top: 40%;
+  }
+  .holdBtn {
+    position: absolute;
+    top: 54%;
   }
 }

@@ -101,15 +101,16 @@ main img {
   background-color: #ffffffcb;
   border-radius: 10px;
 }
-#reset {
+/* buttons styling */
+.resetBtn {
   position: absolute;
   top: 5%;
 }
-#dicebtn {
+.diceBtn {
   position: absolute;
   top: 55%;
 }
-#hold {
+.holdBtn {
   position: absolute;
   top: 70%;
 }
@@ -127,6 +128,7 @@ main img {
   padding: 0.5rem 3.5rem;
   border-radius: 05px;
 }
+
 /* hidden classes */
 .hide-element {
   display: none;
@@ -137,6 +139,15 @@ main img {
 .winnerplayer {
   background-color: #ae00ffa9;
 }
+.hiddenDice {
+  position: absolute;
+  top: 54%;
+}
+.hiddenHold {
+  position: absolute;
+  top: 40%;
+}
+/* editable styling */
 @keyframes blink {
   50% {
     opacity: 0;

@@ -39,6 +39,18 @@ dicebtn.addEventListener("click", function () {
     leftside.classList.toggle("activeplayer");
     rightside.classList.toggle("activeplayer");
   }
+  if (activeplayer === 0 && window.matchMedia("(max-width: 537px)").matches) {
+    holdScore.classList.add("holdBtn");
+    holdScore.classList.remove("hiddenHold");
+    dicebtn.classList.remove("hiddenDice");
+    dicebtn.classList.add("diceBtn");
+  }
+  if (activeplayer === 1 && window.matchMedia("(max-width: 537px)").matches) {
+    holdScore.classList.remove("holdBtn");
+    holdScore.classList.add("hiddenHold");
+    dicebtn.classList.add("hiddenDice");
+    dicebtn.classList.remove("diceBtn");
+  }
 });
 
 // reset button functionality
@@ -69,4 +81,16 @@ holdScore.addEventListener("click", function () {
   activeplayer = activeplayer === 0 ? 1 : 0;
   leftside.classList.toggle("activeplayer");
   rightside.classList.toggle("activeplayer");
+  if (activeplayer === 0 && window.matchMedia("(max-width: 537px)").matches) {
+    holdScore.classList.add("holdBtn");
+    holdScore.classList.remove("hiddenHold");
+    dicebtn.classList.remove("hiddenDice");
+    dicebtn.classList.add("diceBtn");
+  }
+  if (activeplayer === 1 && window.matchMedia("(max-width: 537px)").matches) {
+    holdScore.classList.remove("holdBtn");
+    holdScore.classList.add("hiddenHold");
+    dicebtn.classList.add("hiddenDice");
+    dicebtn.classList.remove("diceBtn");
+  }
 });
