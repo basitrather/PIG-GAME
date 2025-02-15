@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIG-GME</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>PIG GAME</h1>
+    <p>The first player to score 50 wins the game</p>
+    <p>you can edit the player name</p>
+    <main>
+        <div class="left side activeplayer" id="p0">
+            <div class="playerName" contenteditable="true">Player 1</div>
+            <div class="score0 score">0</div>
+            <div class="current">
+                <div class="scoreTitle">current</div>
+                <div class="currentScore" id="player-0-CurrentScore">11</div>
+            </div>
+        </div>
+        <div class="right side" id="p1">
+            <div class="playerName" contenteditable="true">Player2</div>
+            <div class="score1 score">0</div>
+            <div class="current">
+                <div class="scoreTitle">current</div>
+                <div class="currentScore" id="player-1-CurrentScore">24</div>
+            </div>
+        </div>
+        </div>
+        <button id="reset" class="button btn"><img src="/icons/reset.png" alt="">New Game</button>
+        <button id="dicebtn" class="button btn"><img src="/icons/dice.png" alt="">Roll dice</button>
+        <button id="hold" class="button btn"><img src="/icons/hold.png" alt="">hold</button>
+        <img id="roll1" class="dice" src="/icons/roll1.png" alt="">
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>

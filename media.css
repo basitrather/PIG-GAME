@@ -1,0 +1,107 @@
+/* Large devices (laptops/desktops) */
+
+@media (max-width: 1200px) {
+  .btn {
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  p {
+    font-size: 1rem;
+  }
+  .current {
+    padding: 1.5rem 2rem;
+  }
+  .playerName {
+    font-size: 1.7rem;
+  }
+  .score {
+    font-size: 2.5rem;
+  }
+  [contenteditable="true"]::after {
+    content: " |";
+    color: rgb(0, 0, 0);
+    font-size: 1.7rem;
+    animation: blink 1s infinite;
+  }
+}
+
+/* Medium devices (tablets) */
+
+@media (max-width: 700px) {
+  main {
+    width: 90vw;
+  }
+  .current {
+    padding: 1rem 2rem;
+  }
+  .playerName {
+    font-size: 1.4rem;
+  }
+  .score {
+    font-size: 2.2rem;
+  }
+  [contenteditable="true"]::after {
+    font-size: 1.4rem;
+  }
+  .btn {
+    padding: 0.4rem 1rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* Small devices (phones) */
+
+@media (max-width: 535px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  main {
+    width: 100vw;
+    height: 95vh;
+    flex-direction: column;
+  }
+  .side {
+    height: 45vh;
+    width: 80%;
+  }
+  .left {
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 5rem;
+  }
+  .right {
+    border-radius: 0 0 10px 10px;
+    padding-top: 4rem;
+  }
+  .current {
+    padding: 1rem 1.5rem;
+  }
+  .btn:hover {
+    box-shadow: 1px 1px 17px #c7365f;
+    padding: 0.4rem 0.5rem;
+    border-radius: 010px;
+  }
+  .dice {
+    position: absolute;
+    top: 47%;
+    display: block;
+    height: 40px;
+    border-radius: 8px;
+  }
+  #reset {
+    position: absolute;
+    top: 0%;
+    background-color: rgb(225, 33, 88);
+    color: white;
+    padding: 0.3rem 2rem;
+  }
+  #dicebtn {
+    position: absolute;
+    top: 54%;
+  }
+  #hold {
+    position: absolute;
+    top: 40%;
+  }
+}
